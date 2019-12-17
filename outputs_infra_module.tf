@@ -102,3 +102,8 @@ output "infrastructure.network_self_link" {
   description = "Self link of created network"
   value       = "${module.dcos-infrastructure.network_self_link}"
 }
+
+output "infrastructure.private_agents_self_links" {
+  description = "List of Private Agents Self links"
+  value = "${module.infrastructure.private_agents_self_links}"
+}
