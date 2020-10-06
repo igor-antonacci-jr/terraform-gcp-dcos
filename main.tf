@@ -125,6 +125,9 @@ module "dcos-infrastructure" {
   #sob-679 changes
   cluster_network_name = "${var.cluster_network_name}"
 
+  master_cidr_range = "${var.master_cidr_range}"
+  agent_cidr_range = "${var.agent_cidr_range}"
+
   labels = "${var.labels}"
 
   providers = {

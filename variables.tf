@@ -194,3 +194,13 @@ variable "ansible_additional_config" {
 variable "cluster_network_name" {
   description = "Name of the main network"
 }
+
+variable "master_cidr_range" {
+  description = "Master CIDR Range"
+  default     = "10.0.144.0/20"
+}
+
+variable "agent_cidr_range" {
+  description = "Agent CIDR Range"
+  default     = "10.0.160.0/20"
+}
