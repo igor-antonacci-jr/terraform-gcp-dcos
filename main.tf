@@ -122,6 +122,9 @@ module "dcos-infrastructure" {
   num_public_agents  = "${var.num_public_agents}"
   admin_ips          = "${var.admin_ips}"
 
+  #sob-679 changes
+  cluster_network_name = var.cluster_network_name
+
   labels = "${var.labels}"
 
   providers = {
