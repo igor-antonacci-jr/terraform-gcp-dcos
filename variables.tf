@@ -74,6 +74,11 @@ variable "bootstrap_machine_type" {
   default     = "n1-standard-2"
 }
 
+variable "bootstrap_ssh_user" {
+  description = "Bootstrap node SSH User"
+  default     = ""
+}
+
 variable "masters_gcp_image" {
   description = "[MASTERS] Image to be used"
   default     = ""

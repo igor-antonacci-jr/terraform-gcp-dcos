@@ -97,6 +97,7 @@ module "dcos-infrastructure" {
   bootstrap_dcos_instance_os = "${var.bootstrap_os}"
   bootstrap_disk_size        = "${var.bootstrap_root_volume_size}"
   bootstrap_disk_type        = "${var.bootstrap_root_volume_type}"
+  bootstrap_ssh_user         = "${var.bootstrap_ssh_user}"
 
   master_image            = "${var.masters_gcp_image}"
   master_machine_type     = "${var.masters_machine_type}"
